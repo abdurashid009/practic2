@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://c02.purpledshub.com/uploads/sites/48/2023/04/GettyImages-181827946-066b3f5.jpg?w=1029&webp=1);
+    background-size: cover;
+    min-height: 100vh;
+    background-color: transparent;
+}
+.animation1{
+    position: absolute;
+    font-size: large;
+    animation-name: animation1;
+    animation-timing-function: linear;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes animation1{
+    0%{
+       color: aqua;
+       left: 0;
+       top: 10px;
+    }
+    50%{
+       color: rgb(0, 0, 0);
+       
+    }
+    100%{
+       color: aqua;
+       top: 10px;
+       left: 320px;
+    }
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 450px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.472);
+    backdrop-filter: blur(20px);
+    box-shadow: 4px 2px 10px 4px orangered;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 30px 40px ;
+    transition:500s;
+}
+.wrapper:hover{
+    background: linear-gradient(gold,aqua);
+    
+    
+}
+input{
+    width: 350px;
+    border-radius: 30px;
+    height: 40px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border:2px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px 2px orangered;
+    transition: 500ms;
+    position: relative;
+}
+input ::placeholder{
+    color: rgb(255, 132, 0);
+}
+
+.input-box{
+    color: rgb(255, 128, 0);
+}
+.bxs-lock-alt{
+    position: relative;
+    top: -30px;
+    left: 322px;
+}
+.bxs-user{
+    position: relative;
+    top: -30px;
+    left: 322px;
+}
+label{
+    display: flex;
+    gap: 30px;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    gap: 60px;
+}
+a{
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    
+}
+.div1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.button2{
+    width: 270px;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    height: 40px;
+    border:1px solid orangered;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 2px 2px 15px 4px orangered;
+    position: relative;
+    animation-name: animation2;
+    animation-timing-function: linear;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+}
+.animation1:hover{
+    animation-play-state: paused;
+}
+.button2:hover{
+    animation-play-state: paused;
+}
+@keyframes animation2{
+    0%{
+       color:gold ;
+       left: 0;
+       font-size: larger;
+       font-weight: 600;
+    }
+    50%{
+       color:deeppink;
+       font-size: xx-large;
+       font-weight: 700;
+    }
+    100%{
+       color:lime ;
+       font-size: larger;
+       left: 80px;
+       font-weight: 600;
+    }
+}
